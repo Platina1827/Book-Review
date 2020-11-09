@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#top" alt="Logo"></a>
+        <nav id="show-menu">
+            <ul>
+                <li><a href="#top" class="cool-link">Home</a></li>
+                <li><a href="#book" class="cool-link">Books</a></li>
+                <li><a href="#contact" class="cool-link">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Hamburger Menu Code-->
+        <div class="toggle" tabindex="-1" aria-hidden="true" aria-labelledby="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!--Home Page with Parallax Background Image
+            Reference Link: https://youtu.be/JttTcnidSdQ
+        -->
+        <div class="pimg1" id="top">
+            <div class="ptext">
+                <h2>
+                    Book Review
+                </h2>
+            </div> 
+        </div>
+
+        <!--Books Page with Modals
+            Source: https://youtu.be/Ifx85VUGQIY 
+            x button from popup tutorial
+            Source: https://youtu.be/iE_6pQ3RlZU -->
+        <section class="section-green" id="book">
+        
+            <!-- Modal Buttons -->
+            <img src="img/book1.jpg" class="modal-open" data-modal="modal1" alt="book">
+            <img src="img/book2.jpg" class="modal-open" data-modal="modal2" alt="book">
+            <img src="img/book3.jpg" class="modal-open" data-modal="modal3" alt="book">
+            <img src="img/book4.jpg" class="modal-open" data-modal="modal4" alt="book">
+            <img src="img/book5.jpg" class="modal-open" data-modal="modal5" alt="book">
+            <img src="img/book6.jpg" class="modal-open" data-modal="modal6" alt="book">
+            <img src="img/book7.jpg" class="modal-open" data-modal="modal7" alt="book">
+            <img src="img/book8.jpg" class="modal-open" data-modal="modal8" alt="book">
+        
+            <!-- Modals -->
+            <div class="modal" id="modal1">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>30 Minutes Before Sleeping</h3>
+                <p>By Tetsuji Takashima</p>
+                <p>> Misconceptions about time<br>
+                    > Why '30 minutes before sleeping' matters<br>
+                    > '30 minutes before sleeping' work ethics of successful people<br>
+                    > Sleeping habits that will make dreams come true<br>
+                    > From '30 minutes before sleeping' to '30 minutes in the morning'
+                </p>
+                </div>
+            </div>
+            <div class="modal" id="modal2">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>Think Twice: Harnessing the Power of Counterintuition</h3>
+                <p>By Michael J. Mauboussin</p>
+                <p>Decision making habits people fall victim<br>
+                    > Habit of focusing inside<br>
+                    > Habit of getting comfortable<br>
+                    > Habit of relying on expert over stats<br>
+                    > Habit of getting swept by people and situation<br>
+                    > Habit of relying on self over organization<br>
+                    > Habit of relying on past success guide despite the change in situation<br>
+                    > Habit of overlooking small changes that will explode<br>
+                    > Habit of mistaking success by luck will last
+                </p>
+                </div>
+            </div>
+            <div class="modal" id="modal3">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>Why am I Disappearing?: Survival by Embracing</h3>
+                <p>By Hyeon-cheon Jeong</p>
+                <p>> What makes us disappear<br>
+                    > Are you open towards the world<br>
+                    > Do you accept change<br>
+                    > How high is your tolerance
+                </p>
+                </div>
+            </div>
+            <div class="modal" id="modal4">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>Law of Humor Only 1 Percent Leaders Know</h3>
+                <p>By Bung-Young Lim</p>
+                <p>> Law of being likeable<br>
+                    > Law of trust<br>
+                    > Law of productivity<br>
+                    > Law of persuasion<br>
+                    > Law of reversing crisis<br>
+                    > 10 Ways to improve life quality with humor
+                </p>
+            </div>
+            </div>
+            <div class="modal" id="modal5">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>Nobody can Hurt Me without My Permission</h3>
+                <p>By Barbel Wardetzki</p>
+                <p>> You cannot hurt me<br>
+                    > Do not think everything is your fault<br>
+                    > I reject everything that hurts me<br>
+                    > How to truly love myself without fear
+                </p>
+            </div>
+            </div>
+            <div class="modal" id="modal6">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>The Negative Trait Thesaurus: A Writer's Guide to Character Flaws</h3>
+                <p>By Angela Ackerman & Becca Puglisi</p>
+                <p>List of negative traits with:<br>
+                    > Definition<br>
+                    > Similar flaws<br>
+                    > Possible causes<br>
+                    > Associated behaviors & attitudes<br>
+                    > Associated thoughts & emotions<br>
+                    > Positive & Negative aspects<br>
+                    > Example from film<br>
+                    > Overcoming this trait as a major flaw<br>
+                    > Traits in supporting characters that may cause conflict
+                </p>
+                </div>
+            </div>
+            <div class="modal" id="modal7">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>The Positive Trait Thesaurus: A Writer's Guide to Character Attributes</h3>
+                <p>By Angela Ackerman & Becca Puglisi</p>
+                <p>List of positive traits with:<br>
+                    > Definition<br>
+                    > Similar attributes<br>
+                    > Possible causes<br>
+                    > Associated behaviors<br>
+                    > Associated thoughts & emotions<br>
+                    > Positive & Negative aspects<br>
+                    > Example from film<br>
+                    > Traits in supporting characters that may cause conflict<br>
+                    > Challenging scenarios for the character with that trait
+                </p>
+                </div>
+            </div>
+            <div class="modal" id="modal8">
+                <div class="modal-content">
+                <div class="icon modal-close">&times;</div>
+                <h3>The Emotion Thesaurus: A Writer's Guide to Character Expression (Second Edition)</h3>
+                <p>By Angela Ackerman & Becca Puglisi</p>
+                <p>List of emotions with:<br>
+                    > Definition<br>
+                    > Physical signals & behaviors<br>
+                    > Internal sensations<br>
+                    > Mental responses<br>
+                    > Acute or long-term responses for this emotion<br>
+                    > Signs that this emotion is being suppressed<br>
+                    > May escalate to:<br>
+                    > May de-escalate to:<br>
+                    > Associated power verbs<br>
+                    > Writer's tip
+                </p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section-contact" id="contact">
+            <div class="container">
+            <div class="form-section">
+                <!-- form left -->
+                <div class="form-left">
+                    <img src="https://images.pexels.com/photos/3728085/pexels-photo-3728085.jpeg" alt="photo">
+                </div>
+                <!-- form right-->
+                <div class="form-right">
+                    <div class="contact-title"><h2>Get in Touch</h2></div>
+                    <div class="contact-form">
+                        <form id="contact-form" method="post" action="">
+                            <input name="email" type="text" class="form-control form-length" placeholder="Email" required><br>
+                            <input name="subject" type="text" class="form-control form-length" placeholder="Subject" required><br>
+                            <textarea name="message" class="form-control form-length" placeholder="Message" rows="1" required></textarea><br>
+                            <input type="submit" class="form-control submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+
+    </main>
+        
+    <footer>
+            GrC 339 | Yeyoung Kim | November 2020
+    </footer>
+
+    <!--Allow Javascript for Hamburger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+    crossorigin="anonymous"></script>
+    <!-- Smooth Scrolling Source: https://github.com/cferdinandi/smooth-scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
