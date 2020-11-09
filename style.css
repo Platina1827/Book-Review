@@ -37,6 +37,7 @@ header>a {
 }
 header>a:hover {
     background: url(img/logo2.png);/*Change logo image when hover*/
+    background-size: cover; 
 }
 header {
     /* Header Navigation Size, Color, Boundary */
