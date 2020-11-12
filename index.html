@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="#top" alt="Logo"></a>
+        <a href="#top"></a>
         <nav id="show-menu">
             <ul>
                 <li><a href="#top" class="cool-link">Home</a></li>
@@ -17,7 +17,7 @@
             </ul>
         </nav>
         <!--Hamburger Menu Code-->
-        <div class="toggle" tabindex="-1" aria-hidden="true" aria-labelledby="main-menu">
+        <div class="toggle" tabindex="-1" aria-hidden="true" aria-labelledby="show-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -33,24 +33,25 @@
                 <h2>
                     Book Review
                 </h2>
-            </div> 
+            </div>
+            <div class="navbox" id="book"></div>
         </div>
 
         <!--Books Page with Modals
             Source: https://youtu.be/Ifx85VUGQIY 
             x button from popup tutorial
             Source: https://youtu.be/iE_6pQ3RlZU -->
-        <section class="section-green" id="book">
+        <section class="section-green">
         
             <!-- Modal Buttons -->
-            <img src="img/book1.jpg" class="modal-open" data-modal="modal1" alt="book">
-            <img src="img/book2.jpg" class="modal-open" data-modal="modal2" alt="book">
-            <img src="img/book3.jpg" class="modal-open" data-modal="modal3" alt="book">
-            <img src="img/book4.jpg" class="modal-open" data-modal="modal4" alt="book">
-            <img src="img/book5.jpg" class="modal-open" data-modal="modal5" alt="book">
-            <img src="img/book6.jpg" class="modal-open" data-modal="modal6" alt="book">
-            <img src="img/book7.jpg" class="modal-open" data-modal="modal7" alt="book">
-            <img src="img/book8.jpg" class="modal-open" data-modal="modal8" alt="book">
+            <img src="img/book1.jpg" class="modal-open" data-modal="modal1" alt="Book cover titled: 30 Minutes Before Sleeping.">
+            <img src="img/book2.jpg" class="modal-open" data-modal="modal2" alt="Book cover titled: Think Twice: Harnessing the Power of Counterintuition.">
+            <img src="img/book3.jpg" class="modal-open" data-modal="modal3" alt="Book cover titled: Why am I Disappearing?: Survival by Embracing.">
+            <img src="img/book4.jpg" class="modal-open" data-modal="modal4" alt="Book cover titled: Law of Humor Only 1 Percent Leaders Know.">
+            <img src="img/book5.jpg" class="modal-open" data-modal="modal5" alt="Book cover titled: Nobody can Hurt Me without My Permission.">
+            <img src="img/book6.jpg" class="modal-open" data-modal="modal6" alt="Book cover titled: The Negative Trait Thesaurus: A Writer's Guide to Character Flaws.">
+            <img src="img/book7.jpg" class="modal-open" data-modal="modal7" alt="Book cover titled: The Positive Trait Thesaurus: A Writer's Guide to Character Attributes.">
+            <img src="img/book8.jpg" class="modal-open" data-modal="modal8" alt="Book cover titled: The Emotion Thesaurus: A Writer's Guide to Character Expression (Second Edition).">
         
             <!-- Modals -->
             <div class="modal" id="modal1">
@@ -177,19 +178,19 @@
                 </div>
             </div>
         </section>
-    
-        <section class="section-contact" id="contact">
+        <div class="navbox" id="contact"></div>
+        <section class="section-contact">
             <div class="container">
             <div class="form-section">
                 <!-- form left -->
                 <div class="form-left">
-                    <img src="https://images.pexels.com/photos/3728085/pexels-photo-3728085.jpeg" alt="photo">
+                    <img src="https://images.pexels.com/photos/3728085/pexels-photo-3728085.jpeg" alt="Photo of an open book with leaves and glasses.">
                 </div>
                 <!-- form right-->
                 <div class="form-right">
                     <div class="contact-title"><h2>Get in Touch</h2></div>
                     <div class="contact-form">
-                        <form id="contact-form" method="post" action="">
+                        <form id="contact-form" method="post">
                             <input name="email" type="text" class="form-control form-length" placeholder="Email" required><br>
                             <input name="subject" type="text" class="form-control form-length" placeholder="Subject" required><br>
                             <textarea name="message" class="form-control form-length" placeholder="Message" rows="1" required></textarea><br>
